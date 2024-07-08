@@ -4,12 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
-
+target
+dist 
+logs
 # testing
 /coverage
 
 # production
 /build
+public
 
 # misc
 .DS_Store
@@ -24,10 +27,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.log
+
 # editors
 .vscode/
 .idea/
 *.swp
+.cache 
 
 # for os
 Thumbs.db
