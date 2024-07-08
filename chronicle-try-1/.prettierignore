@@ -1,0 +1,8 @@
+# ignored hah
+build
+coverage
+node_modules
+.next
+*.html
+
+
