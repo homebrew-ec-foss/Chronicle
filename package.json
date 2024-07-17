@@ -10,9 +10,21 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@tiptap/extension-collaboration": "^2.5.1",
+    "@tiptap/extension-collaboration-cursor": "^2.5.1",
+    "@tiptap/extension-document": "^2.5.1",
+    "@tiptap/extension-highlight": "^2.5.1",
+    "@tiptap/extension-horizontal-rule": "^2.5.1",
+    "@tiptap/extension-mention": "^2.5.1",
+    "@tiptap/extension-paragraph": "^2.5.1",
+    "@tiptap/extension-task-item": "^2.5.1",
+    "@tiptap/extension-task-list": "^2.5.1",
+    "@tiptap/react": "^2.5.1",
+    "@tiptap/starter-kit": "^2.5.1",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "y-webrtc": "^10.3.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.16.0",
