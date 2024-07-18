@@ -17,13 +17,13 @@
 }
 
 body {
-  
+
   font-family: monospace;
   margin: 0;
   padding: 30px;
   border-radius: 24px;
   background: #181818;
-  
+
 }
 
 @layer utilities {
@@ -39,7 +39,7 @@ body {
   font-size: 1rem;
   background: #212121;
   border-radius: 30px;
- 
+
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
   height: 1000px;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .tiptap blockquote {
-  
+
   margin: 1.5rem 0;
   padding-left: 1rem;
 }
@@ -193,3 +193,100 @@ body {
   user-select: none;
   white-space: nowrap;
 }
+
+/* Page container styles */
+.page-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6b46c1; /* Navbar background color */
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .room-id {
+    font-size: 18px;
+  }
+  
+  .navbar .invite-button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #6b46c1;
+    cursor: pointer;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    overflow: hidden;
+    margin: 10px;
+    gap: 20px;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    padding: 20px;
+    background-color: #61596b;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color:#212121;
+    color: white;
+  }
+  
+  .file-tree {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .file-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Editor styles */
+  .editor {
+    padding: 20px;
+    background-color: #1a202c; /* Editor background color */
+    color: white; /* Text color */
+    overflow-y: auto; /* Scroll if content exceeds */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .editor h1 {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

@@ -1,22 +1,22 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-"use client"
-import React, { useState } from 'react';
-import Editor from '../components/Editor';
+'use client';
+import React from 'react';
 import Navbar from '../components/navbar';
-import Login from '../components/login';
+import Sidebar from '../components/Sidebar';
+import Editor from '../components/Editor';
+import '../styles.css';
 
-const App = () => {
+const files = ['item 1', 'item 2', 'item 3']; // Replace this with your actual file data
+
+const Page = () => {
   return (
-    <>
-      <div>
-        <Navbar />
-      </div>
-      <div className='p-5'></div>
-      <div>
+    <div className="page-container">
+      <Navbar />
+      <div className="main-content">
+        <Sidebar files={files} />
         <Editor />
       </div>
-    </>
+    </div>
   );
 };
 
-export default App;
+export default Page;
