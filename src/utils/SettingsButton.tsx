@@ -1,5 +1,7 @@
-// lib/useUsername.ts
 import { useEffect, useState } from 'react'
+
+//  These are GPT generated i can't be asked
+//  It ain't that deep
 
 const fallbackNames = [
   'BlueFalcon', 'SilentShadow', 'QuantumToast', 'NebulaNomad',

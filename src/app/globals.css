@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -16,7 +13,6 @@
   line-height: 1.5;
 }
 
-/* Optional placeholder style */
 .ProseMirror p.is-empty::before {
   color: #a6adc8;
   opacity: 0.5;
@@ -24,20 +20,6 @@
   float: left;
   height: 0;
   pointer-events: none;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -83,12 +65,10 @@ body {
   border-radius: 4px;
 }
 
-/* Basic editor styles */
 .tiptap :first-child {
   margin-top: 10px;
 }
 
-/* List styles */
 .tiptap ul,
 .tiptap ol {
   padding: 0 1rem;
@@ -101,7 +81,6 @@ body {
   margin-bottom: 0.25em;
 }
 
-/* Heading styles */
 .tiptap h1,
 .tiptap h2,
 .tiptap h3,
@@ -198,7 +177,6 @@ body {
   word-break: normal;
 }
 
-/* Render the username above the caret */
 .collaboration-cursor__label {
   border-radius: 3px 3px 3px 0;
   color: #0d0d0d;
